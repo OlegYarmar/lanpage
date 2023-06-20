@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  background-color: rgb(255, 255, 255);
+  color: #0f141e;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.main {
+  max-width: 1080px;
+  margin: auto;
+  padding-top: 0px;
+}
+
+
+@media (max-width: 700px) {
+  main {
+    text-align: start;
+  }
+}
+
+@media (max-width: 700px) {
+  h1, h2 {
+    text-align: center;
+  }
+}
+
+.h1{
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  padding: 0px;
+  margin: 10px;
+  text-decoration: underline;
+}
+
+.h2{
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.main p{
+  font-size: 20px;
+}
+
+.main ul{
+  font-size: 20px;
+}
+
+.zadanie{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+	display: inline-block;	
+	box-sizing: border-box;
+	padding: 0 20px;
+	margin: 0 15px 15px 0;
+	border: none;  
+	border-radius: 6px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 17px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #385898;
+	background-color: #e7f3ff;
+	cursor: pointer;
+  text-align: center;
+
+}
+.btnD {
+	display: inline-block;	
+	box-sizing: border-box;
+	padding: 0 20px;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, 0);
+	margin: 0 15px 15px 0;
+	border: none;  
+	border-radius: 6px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 17px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #385898;
+	background-color: #e7f3ff;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: #DBE7F2;
+}
+.btn:active {
+	transform: scale(0.96);
+}
+
+.btn:hover {
+	background-color: #DBE7F2;
+}
+.btn:active {
+	transform: scale(0.96);
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 300px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0,0,0,0.9); 
+}
+.modal-content {
+  position: relative;
+  background-color: #ffffff;
+  margin: auto;
+  padding: 0;
+  border: 1px solid rgb(0, 0, 0);
+  width: 400px;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.9s;
+  animation-name: animatetop;
+  animation-duration: 0.7s;
+}
+.modal-header {
+  padding: 2px 16px;
+  background-color: #836c6c;
+  color: white;
+
+  }
+  
+.modal-body {
+  padding: 2px 16px;
+
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  }
+
+@-webkit-keyframes animatetop {
+from {top:-300px; opacity:0} 
+to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+from {top:-300px; opacity:0}
+to {top:0; opacity:1}
+}
+
+
+
+
